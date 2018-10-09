@@ -8,7 +8,7 @@
 
 3. [Challenge 3](#)
 
-4. [Implementation: Linked List](#)
+4. [Implementation:](#)
 
 5. [Challenge 5](#)
 
