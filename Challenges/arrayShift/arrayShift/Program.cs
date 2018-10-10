@@ -17,7 +17,32 @@ namespace arrayShift
 
         //mathod to take original array, find the middle, and insert
         //the value into the center of the new array and return new array
-        static int[] ArrayShift(int[], int value)
+        static int[] ArrayShift(int[] array, int value)
+        {
+            //creating new array with space for added value
+            int[] newArray = new int[array.Length + 1];
+
+            //finding middle index of array, using math.ceiling to account for odd array lengths
+            decimal middleIdx = array.Length / 2;
+            decimal midIdx = Math.Ceiling(middleIdx);
+
+            for(int i = 0; i < newArray.Length; i++)
+            {
+                if (i < midIdx)
+                {
+                    newArray[i] = array[i];
+                }
+                else if (i == midIdx)
+                {
+                    newArray[i] = value;
+                }
+                else
+                {
+                    newArray[i] = array[i - 1];
+                }
+            }
+            return newArray;
+        }
 
 
     }
