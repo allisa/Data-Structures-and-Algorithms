@@ -4,7 +4,7 @@
 
 1. [Challenge 1](#)
 
-2. [Challenge 2][Array Shift](https://github.com/allisa/Data-Structures-and-Algorithms/pull/1)
+2. [Challenge 2: Array Shift](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Challenges/arrayShift)
 
 3. [Challenge 3](#)
 
