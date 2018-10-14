@@ -5,4 +5,3 @@ Write a method called insertShiftArray which takes in an array and the value to 
 
 ## Solution
 ![whiteboard](https://github.com/allisa/Data-Structures-and-Algorithms/blob/master/assets/array_shift_whiteboard.jpeg)
-![screen shot](https://github.com/allisa/Data-Structures-and-Algorithms/blob/master/assets/array_shift.png)
