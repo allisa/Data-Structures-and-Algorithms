@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedLists.Classes
 {
-    class LLists
+    public class LList
     {
         /// <summary>
 		///		Always points to the first node in the LL
@@ -92,6 +92,7 @@ namespace LinkedLists.Classes
             {
                 Add(newNode);
                 return;
+            
             }
 
             while (Current.Next != null)
@@ -101,6 +102,7 @@ namespace LinkedLists.Classes
                     newNode.Next = existingNode;
                     Current.Next = newNode;
                     return;
+                
                 }
                 Current = Current.Next;
             }
@@ -119,15 +121,17 @@ namespace LinkedLists.Classes
                 newNode.Next = Current.Next;
                 Current.Next = newNode;
                 return;
+    
             }
 
-            while (Current.Next != null)
+            while (Current.Value != null)
             {
-                if (Current.Next.Value == existingNode.Value)
+                if (Current.Value == existingNode.Value)
                 {
-                    newNode.Next = existingNode;
+                    newNode.Next = Current.Next;
                     Current.Next = newNode;
                     return;
+                  
                 }
                 Current = Current.Next;
             }

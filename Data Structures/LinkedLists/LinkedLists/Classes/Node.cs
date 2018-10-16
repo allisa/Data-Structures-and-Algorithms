@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinkedLists.Classes
 {
-    class Node
+    public class Node
     {
         /// <summary>
 		/// the value contained in the node
