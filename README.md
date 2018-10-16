@@ -8,7 +8,7 @@
 
 3. [Challenge 3: Binary Search](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Challenges/BinarySearch)
 
-4. [Implementation:](#)
+4. [Implementation: Linked Lists](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Data%20Structures/LinkedLists)
 
 5. [Challenge 5](#)
 
