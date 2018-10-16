@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LinkedList.cs.Classes
+namespace LinkedLists.Classes
 {
-    class LinkedList
+    class LLists
     {
         /// <summary>
 		///		Always points to the first node in the LL
@@ -20,7 +20,7 @@ namespace LinkedList.cs.Classes
         ///		LL requires a node at time of creation to be the HEAD
         /// </summary>
         /// <param name="node">the node that will become the head</param>
-        public void LList(Node node)
+        public LList(Node node)
         {
             Head = node;
             Current = node;
@@ -40,6 +40,24 @@ namespace LinkedList.cs.Classes
             Current = Head;
         }
 
+        /// <summary>
+        ///	Prints the list node by node to the console
+        ///	time: O(n)
+        ///	space: O(1)
+        /// </summary>
+        public void Print()
+        {
+            Current = Head;
+
+            while (Current.Next != null)
+            {
+                Console.Write($"{Current.Value} --> ");
+                Current = Current.Next;
+            }
+
+            Console.Write($"{Current.Value} --> NULL\n");
+            Current = Head;
+        }
 
 
         /// <summary>
@@ -88,7 +106,11 @@ namespace LinkedList.cs.Classes
             }
         }
 
-
+        /// <summary>
+        /// Method to add a new node after given node
+        /// </summary>
+        /// <param name="newNode"></param>
+        /// <param name="existingNode"></param>
         public void AddAfter(Node newNode, Node existingNode)
         {
             Current = Head;
@@ -110,25 +132,6 @@ namespace LinkedList.cs.Classes
                 Current = Current.Next;
             }
 
-        }
-
-        /// <summary>
-        ///	Prints the list node by node to the console
-        ///	time: O(n)
-        ///	space: O(1)
-        /// </summary>
-        public void Print()
-        {
-            Current = Head;
-
-            while (Current.Next != null)
-            {
-                Console.Write($"{Current.Value} --> ");
-                Current = Current.Next;
-            }
-
-            Console.Write($"{Current.Value} --> NULL\n");
-            Current = Head;
         }
     }
 }
