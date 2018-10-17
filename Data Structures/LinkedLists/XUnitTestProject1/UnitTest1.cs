@@ -73,7 +73,7 @@ namespace XUnitTestProject1
 
             Assert.Equal(testValue, testList.Head.Next.Value);
         }
-
     }
+
 }
 

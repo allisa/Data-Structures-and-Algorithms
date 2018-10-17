@@ -137,5 +137,26 @@ namespace LinkedLists.Classes
             }
 
         }
+
+        /// <summary>
+        /// MEthod to find a given node
+        /// </summary>
+        /// <param name="nodeToBeFound"></param>
+        /// <returns></returns>
+        public Node FindNode(Node nodeToBeFound)
+        {
+            Current = Head;
+            
+            while (Current.Next != null)
+            {
+                if (Current.Value == nodeToBeFound.Value)
+                {
+                    return Current;
+                }
+
+                Current = Current.Next;
+            }
+            return null;
+        }
     }
 }
