@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LL_Merge", "LL_Merge\LL_Merge.csproj", "{A93A9311-7F09-4755-8686-CCAAA7CD4E2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LL_Merge", "LL_Merge\LL_Merge.csproj", "{A93A9311-7F09-4755-8686-CCAAA7CD4E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{8692DBBE-6A1E-46B8-9DFD-B9F09CAB98EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A93A9311-7F09-4755-8686-CCAAA7CD4E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A93A9311-7F09-4755-8686-CCAAA7CD4E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A93A9311-7F09-4755-8686-CCAAA7CD4E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8692DBBE-6A1E-46B8-9DFD-B9F09CAB98EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8692DBBE-6A1E-46B8-9DFD-B9F09CAB98EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8692DBBE-6A1E-46B8-9DFD-B9F09CAB98EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8692DBBE-6A1E-46B8-9DFD-B9F09CAB98EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

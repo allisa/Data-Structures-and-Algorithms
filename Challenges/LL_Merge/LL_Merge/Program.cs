@@ -3,9 +3,9 @@ using LinkedLists.Classes;
 
 namespace LL_Merge
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
 
@@ -31,7 +31,7 @@ namespace LL_Merge
         public static LList Merge(LList one, LList two)
         {
             Node dummListStart = new Node(1);
-            Node tail = new Node(2);
+            Node tail = dummListStart;
 
             one.Current = one.Head;
             two.Current = two.Head;
@@ -50,11 +50,11 @@ namespace LL_Merge
                 }
                 else
                 {
+                    tail.Next = one.Current;
                     tail = one.Current;
-                    tail.Next = one.Current.Next;
                     one.Current = one.Current.Next;
+                    tail.Next = two.Current;
                     tail = two.Current;
-                    tail.Next = two.Current.Next;
                     two.Current = two.Current.Next;
                 }
             }
