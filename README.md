@@ -10,6 +10,6 @@
 
 4. [Implementation: Linked Lists](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Data%20Structures/LinkedLists)
 
-5. [Challenge 5](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Challenges/LL_Merge)
+5. [Challenge 5: Merge Linked Lists](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Challenges/LL_Merge)
 
 6. [Challenge 6](#)
