@@ -39,5 +39,29 @@ namespace XUnitTestProject1
             Assert.Equal(2, result.Head.Next.Value); ;
         }
 
+        [Fact]
+        public void TestLongerListTwoLength()
+        {
+            LList listOne = new LList(new Node(1));
+            LList listTwo = new LList(new Node(2));
+
+            listOne.Append(new Node(3));
+            listTwo.Append(new Node(4));
+            listOne.Append(new Node(5));
+            listTwo.Append(new Node(6));
+            listTwo.Append(new Node(7));
+
+            LList result = Program.Merge(listOne, listTwo);
+
+            tail.Next = one.Current;
+            tail = one.Current;
+            one.Current = one.Current.Next;
+            tail.Next = two.Current;
+            tail = two.Current;
+            two.Current = two.Current.Next;
+
+            Assert.Equal(, Program.Merge(listOne, listTwo));
+        }
+
     }
 }
