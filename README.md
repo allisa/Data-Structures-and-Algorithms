@@ -12,4 +12,4 @@
 
 5. [Challenge 5: Merge Linked Lists](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Challenges/LL_Merge)
 
-6. [Challenge 6](#)
+6. [Challenge 6: Reverse a Linked List](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Challenges/LL_Reverse)
