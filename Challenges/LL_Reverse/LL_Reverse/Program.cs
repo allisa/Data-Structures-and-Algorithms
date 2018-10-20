@@ -3,7 +3,7 @@ using LinkedLists.Classes;
 
 namespace LL_Reverse
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -25,7 +25,12 @@ namespace LL_Reverse
             list.Print();
         }
 
-        public static void Reverse(LList list)
+        /// <summary>
+        /// Method to reverse a linked list
+        /// </summary>
+        /// <param name="list"></param>
+        /// <returns>LList</returns>
+        public static LList Reverse(LList list)
         {
             Node prevNode = null;
             Node nextNode = null;
@@ -40,28 +45,7 @@ namespace LL_Reverse
                 currentNode = nextNode;
             }
             list.Head = prevNode;
+            return list;
         }
-
-        //public static void Reverse(LList list)
-        //{
-        //    //Create pointers to track position
-        //    Node current = list.Head, prev = null, next = null;
-
-        //    list.Current = list.Head;
-        //    while (list.Current != null)
-        //    {
-        //        //Get next link
-        //        next = list.Current.Next;
-
-        //        //Reverse current node's next ptr
-        //        list.Current.Next = prev;
-
-        //        //Advance pointers
-        //        prev = list.Current;
-        //        list.Current = list.Current.Next;
-        //    }
-        //    list.Head = prev;
-        //}
-
     }
 }
