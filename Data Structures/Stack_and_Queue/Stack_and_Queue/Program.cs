@@ -17,7 +17,7 @@ namespace Stack_and_Queue
             Node node5 = new Node(5);
             Node node6 = new Node(6);
 
-            //Adding nodes to queue
+            //adding nodes to queue
             Queue queue = new Queue(node1);
             queue.Enqueue(node2);
             queue.Enqueue(node3);
@@ -25,6 +25,7 @@ namespace Stack_and_Queue
             queue.Enqueue(node5);
             queue.Enqueue(node6);
             
+            //loop to peek a queue and while it does not equal null, remove a node with Dequeue
             Console.WriteLine("****Queue****");
             while (queue.Peek() != null)
             {
@@ -35,6 +36,7 @@ namespace Stack_and_Queue
             Console.WriteLine("****Stack****");
             Stack stack = new Stack(null);
 
+            //add nodes to the stack
             stack.Push(node6);
             stack.Push(node5);
             stack.Push(node4);
@@ -42,7 +44,7 @@ namespace Stack_and_Queue
             stack.Push(node2);
             stack.Push(node1);
 
-
+            //loop to peek at stakc and while it does not equal null, remove a node with Pop
             while (stack.Peek() != null)
             {
                 Console.WriteLine(stack.Peek().Value);

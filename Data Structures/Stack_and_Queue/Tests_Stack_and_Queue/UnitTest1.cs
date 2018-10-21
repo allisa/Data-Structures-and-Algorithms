@@ -98,6 +98,8 @@ namespace Tests_Stack_and_Queue
             Assert.Equal(node2, queue.Front);
         }
 
+        /// <summary>
+        /// test to prove the queue can be peeked at
         /// </summary>
         [Fact]
         public void CanPeekAtQueue()
