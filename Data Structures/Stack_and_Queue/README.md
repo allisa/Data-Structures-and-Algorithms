@@ -20,7 +20,7 @@ Stacks and queues are helpful to temporaily store data until it is no longer nee
 
 I think of a stack in terms of checking out library books. You take a stack of books to the counter where the top book is removed and scanned. You can't take and scan a book from the middle because you can't reach it in the stack.
 
-I think of a queue as a food truckk line. Your order is taken and then stored in a queue for preparation. Once your order has been made and handed off to you, the data is no longer needed and removed from the queue.
+I think of a queue as a food truck line. Your order is taken and then stored in a queue for preparation. Once your order has been made and handed off to you, the data is no longer needed and removed from the queue.
 
 # Visual
 
