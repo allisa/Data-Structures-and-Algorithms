@@ -61,5 +61,54 @@ namespace Tests_Stack_and_Queue
 
             Assert.Equal(node3, stack.Peek());
         }
+
+        /// <summary>
+        /// test to prove nodes were added/enqueued to queue
+        /// </summary>
+        [Fact]
+        public void CanAddToAQueue()
+        {
+            Node node1 = new Node(1);
+            Node node2 = new Node(2);
+            Node node3 = new Node(3);
+
+            Queue queue = new Queue(node1);
+            queue.Enqueue(node2);
+            queue.Enqueue(node3);
+
+            Assert.Equal(node3, queue.Rear);
+        }
+
+        /// <summary>
+        /// test to prove node1 was removed/dequeued from queue
+        /// </summary>
+        [Fact]
+        public void CanRemoveFromQueue()
+        {
+            Node node1 = new Node(1);
+            Node node2 = new Node(2);
+            Node node3 = new Node(3);
+
+            Queue queue = new Queue(node1);
+            queue.Enqueue(node2);
+            queue.Enqueue(node3);
+
+            queue.Dequeue();
+
+            Assert.Equal(node2, queue.Front);
+        }
+
+        /// </summary>
+        [Fact]
+        public void CanPeekAtQueue()
+        {
+            Node node1 = new Node(1);
+            Node node2 = new Node(2);
+            Node node3 = new Node(3);
+
+            Queue queue = new Queue(node1);
+
+            Assert.Equal(node1, queue.Peek());
+        }
     }
 }

@@ -25,17 +25,11 @@ namespace Stack_and_Queue
             queue.Enqueue(node5);
             queue.Enqueue(node6);
             
-            Console.WriteLine("Place in the queue: ");
-            for (int i = 0; i < 6; i++)
+            Console.WriteLine("****Queue****");
+            while (queue.Peek() != null)
             {
-                //peeking at queue before removing
-                Console.WriteLine($"Peek #{i}: ");
-                Console.WriteLine($"{queue.Peek().Value}");
-
-                //removing nodes from queue
-                Console.WriteLine("Remove node: ");
-                Node removeNode = queue.Dequeue();
-                Console.WriteLine(removeNode.Value);
+                Console.WriteLine(queue.Peek().Value);
+                queue.Dequeue();
             }
 
             Console.WriteLine("****Stack****");
