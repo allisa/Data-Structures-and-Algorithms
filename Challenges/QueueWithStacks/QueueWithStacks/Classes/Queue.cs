@@ -5,7 +5,7 @@ using Stack_and_Queue.Classes;
 
 namespace QueueWithStacks.Classes
 {
-    public class Queue
+    public class QueueOfStacks
     {
         Stack stack1 = new Stack(null);
         Stack stack2 = new Stack(null);
@@ -15,7 +15,7 @@ namespace QueueWithStacks.Classes
         /// </summary>
         /// <param name="stackOne"></param>
         /// <param name="stackTwo"></param>
-        public void QueueOfStacks(Stack stackOne, Stack stackTwo)
+        public QueueOfStacks(Stack stackOne, Stack stackTwo)
         {
             stack1 = stackOne;
             stack2 = stackTwo;
@@ -38,12 +38,12 @@ namespace QueueWithStacks.Classes
         {
             Node popTemp = null;
 
-            while (stack1.Peek() != null )
+            while (stack1.Top != null )
             {
                 stack2.Push(stack1.Pop());
             }
 
-            popTemp = stack1.Pop();
+            popTemp = stack2.Pop();
 
             while (stack2.Top != null)
             {
