@@ -8,6 +8,9 @@ namespace XUnitTestProject1
 {
     public class UnitTest1
     {
+        /// <summary>
+        /// test for removing first node added
+        /// </summary>
         [Fact]
         public void TestToRemoveFirstNodeAddedToQueue()
         {
@@ -27,6 +30,9 @@ namespace XUnitTestProject1
             Assert.Equal(node1.Value, queue.Dequeue().Value);
         }
 
+        /// <summary>
+        /// test to confirm fifo
+        /// </summary>
         [Fact]
         public void LastNodeAddedIsNotFirstOut()
         {
@@ -46,6 +52,10 @@ namespace XUnitTestProject1
             Assert.NotEqual(node3.Value, queue.Dequeue().Value);
         }
 
+
+        /// <summary>
+        /// testing enqueue dequeue and enqueue
+        /// </summary>
         [Fact]
         public void TestToEnqueueDequeueEnqueue()
         {
@@ -70,6 +80,9 @@ namespace XUnitTestProject1
             Assert.Equal(2, queue.Dequeue().Value);
         }
 
+        /// <summary>
+        /// test with single node
+        /// </summary>
         [Fact]
         public void TestSingleNode()
         {
@@ -86,6 +99,9 @@ namespace XUnitTestProject1
             Assert.Equal(node1.Value, queue.Dequeue().Value);
         }
 
+        /// <summary>
+        /// test multiple dequeues
+        /// </summary>
         [Fact]
         public void TestMultipleeDequeues()
         {
@@ -109,7 +125,9 @@ namespace XUnitTestProject1
             Assert.Equal(3, queue.Dequeue().Value);
         }
 
-
+        /// <summary>
+        /// test multiple enqueues
+        /// </summary>
         [Fact]
         public void TestMultipleeEnqueues()
         {
@@ -133,7 +151,6 @@ namespace XUnitTestProject1
 
             queue.Enqueue(node4);
             queue.Enqueue(node5);
-
 
             Assert.Equal(3, queue.Dequeue().Value);
         }
