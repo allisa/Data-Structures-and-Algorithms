@@ -25,6 +25,11 @@ namespace FIFOAnimalShelter.Classes
             Rear = animal;
         }
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public Animal Dequeue()
         {
             Animal temp = Front;
