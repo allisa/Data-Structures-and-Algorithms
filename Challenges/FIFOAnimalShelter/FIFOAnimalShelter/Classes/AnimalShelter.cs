@@ -27,7 +27,7 @@ namespace FIFOAnimalShelter.Classes
 
 
         /// <summary>
-        /// 
+        /// Method to dequeue the front animal if there is not an animal preference
         /// </summary>
         /// <returns></returns>
         public Animal Dequeue()
@@ -38,6 +38,11 @@ namespace FIFOAnimalShelter.Classes
             return temp;
         }
 
+        /// <summary>
+        /// Method to return the front animal if oldest in shelter or move queue to get longest selcted animal in shelter
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns>adoptMe</returns>
         public Animal Dequeue(string value)
         {
             Animal adoptMe;
@@ -62,7 +67,6 @@ namespace FIFOAnimalShelter.Classes
                 Enqueue(Dequeue());
             }
             return adoptMe;
-
         }
     }
 
