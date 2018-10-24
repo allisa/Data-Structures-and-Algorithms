@@ -15,3 +15,5 @@
 6. [Challenge 6: Reverse a Linked List](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Challenges/LL_Reverse)
 
 7. [Challenge 7: Stacks and Queues](https://github.com/allisa/Data-Structures-and-Algorithms/tree/stack_and_queue/Data%20Structures/Stack_and_Queue)
+
+8. [Challenge 8: FIFO Animal Shelter](https://github.com/allisa/Data-Structures-and-Algorithms/tree/fifo_animal_shelter_update/Challenges/FIFOAnimalShelter)
