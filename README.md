@@ -17,3 +17,5 @@
 7. [Challenge 7: Stacks and Queues](https://github.com/allisa/Data-Structures-and-Algorithms/tree/stack_and_queue/Data%20Structures/Stack_and_Queue)
 
 8. [Challenge 8: FIFO Animal Shelter](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Challenges/FIFOAnimalShelter)
+
+9. [Challenge 9: Multi Bracket Validation](https://github.com/allisa/Data-Structures-and-Algorithms/tree/master/Challenges/Multi_Bracket_Validation)
