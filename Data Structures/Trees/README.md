@@ -28,5 +28,6 @@ AddNode: Adds node to bianry search tree
 Search: Method to search bianry tree for value. Compares value to the root and searches right or left depending on if the value is less than or greater than
 
 #Visual
+![console_app_image](https://user-images.githubusercontent.com/17580143/47672711-e4b94500-db6f-11e8-8396-80891d3e524c.png)
 
 
