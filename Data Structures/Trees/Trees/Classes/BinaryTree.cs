@@ -7,7 +7,7 @@ namespace Trees.Classes
     public class BinaryTree
     {
         public Node Root { get; set; }
-        public List<Node> nodes { get; set; }
+        public List<int> values = new List<int>();
 
         public BinaryTree(Node root)
         {
@@ -19,8 +19,9 @@ namespace Trees.Classes
         /// </summary>
         /// <param name="root"></param>
         /// <returns>List of nodes</returns>
-        public List<Node> PreOrder(Node root)
+        public List<int> PreOrder(Node root)
         {
+            values.Add(root.Value);
             if (root.LeftChild != null)
             {
                 PreOrder(root.LeftChild);
@@ -29,7 +30,7 @@ namespace Trees.Classes
             {
                 PreOrder(root.RightChild);
             }
-            return nodes;
+            return values;
         }
 
         /// <summary>
@@ -37,18 +38,15 @@ namespace Trees.Classes
         /// </summary>
         /// <param name="root"></param>
         /// <returns>List of nodes</returns>
-        public List<Node> InOrder(Node root)
+        public List<int> InOrder(Node root)
         {
-            if (root.LeftChild != null)
-            {
+            if (root != null)
+            { 
                 InOrder(root.LeftChild);
-                nodes.Add(root);
-            }
-            if (root.RightChild != null)
-            {
+                values.Add(root.Value);
                 InOrder(root.RightChild);
             }
-            return nodes;
+            return values;
         }
 
         /// <summary>
@@ -56,18 +54,15 @@ namespace Trees.Classes
         /// </summary>
         /// <param name="root"></param>
         /// <returns>List of nodes</returns>
-        public List<Node> PostOrder(Node root)
+        public List<int> PostOrder(Node root)
         {
-            if (root.LeftChild != null)
+            if (root!= null)
             {
                 PostOrder(root.LeftChild);
-            }
-            if (root.RightChild != null)
-            {
                 PostOrder(root.RightChild);
-                nodes.Add(root);
+                values.Add(root.Value);
             }
-            return nodes;
+            return values;
         }
     }
 }
