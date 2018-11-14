@@ -6,14 +6,15 @@ namespace LinkedLists.Classes
 {
     public class Node
     {
-        /// <summary>
-		/// the value contained in the node
-		/// </summary>
-		public object Value { get; set; }
-        /// <summary>
-        /// the pointer to the next node
-        /// </summary>
+        public object Key { get; set; }
+        public object Value { get; set; }
         public Node Next { get; set; }
+
+        public Node(object key, object value)
+        {
+            Key = key;
+            Value = value;
+        }
 
         /// <summary>
         /// constructor for our nodes
