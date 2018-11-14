@@ -11,6 +11,25 @@ namespace HashTables.Classes
         LList[] Table = new LList[1024];
 
         /// <summary>
+        /// method to add key and value to hash table
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        public void Add(string key, string value)
+        {
+            int index = GetHash(key);
+            Node node = new Node(key, value);
+            if (Contains(key))
+            {
+                Table[index].Append(node);
+            }
+            else
+            {
+                Table[index] = new LList(node);
+            }
+        }
+
+        /// <summary>
         /// method to get hash key for placement in table
         /// </summary>
         /// <param name="key"></param>
@@ -33,11 +52,19 @@ namespace HashTables.Classes
         /// <returns>true/false</returns>
         public bool Contains(string key)
         {
-            if (Find(key) == null)
+            int index = GetHash(key);
+            if (Table[index] == null)
             {
                 return false;
             }
-            return true;
+            Table[index].Current = Table[index].Head;
+            while (Table[index].Current != null)
+            {
+                if ((string)Table[index].Current.Key == key)
+                    return true;
+                Table[index].Current = Table[index].Current.Next;
+            }
+            return false;
         }
 
         /// <summary>
@@ -48,42 +75,19 @@ namespace HashTables.Classes
         public string Find(string key)
         {
             int index = GetHash(key);
-            Table[index].Current = Table[index].Head;
+
             while (Table[index].Current != null)
             {
                 if ((string)Table[index].Current.Key == key)
                 {
-                    return $"{(string)Table[index].Current.Value}: {(string)Table[index].Current.Value}";
+                    return $"{(string)Table[index].Current.Key}: {(string)Table[index].Current.Value}";
                 }
                 else
                 {
                     Table[index].Current = Table[index].Current.Next;
                 }
             }
-            return null;
+                return null;
         }
-
-        //Add(key, value) - void return
-        public void Add(string key, string value)
-        {
-            int index = GetHash(key);
-            Node node = new Node(key, value);
-        }
-
-
     }
-
-    //int index = GetHash(key);
-
-    //if (Table[index] == null)
-    //{
-    //    return false;
-    //}
-    //Table[index].Current = Table[index].Head;
-
-    //while(Table[index].Current != null)
-    //{
-    //    if((string)Table[index].Current.Key == key)
-    //    { }
-    //}
 }
