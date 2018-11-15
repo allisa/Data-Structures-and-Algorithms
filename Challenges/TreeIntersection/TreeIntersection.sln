@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeIntersection", "TreeIntersection\TreeIntersection.csproj", "{3E68A7A4-3D8F-4843-A674-34E46116D9CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeIntersectionTests", "TreeIntersectionTests\TreeIntersectionTests.csproj", "{92DFEB3B-C78B-4D3F-874F-94EC26463106}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E68A7A4-3D8F-4843-A674-34E46116D9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E68A7A4-3D8F-4843-A674-34E46116D9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E68A7A4-3D8F-4843-A674-34E46116D9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E68A7A4-3D8F-4843-A674-34E46116D9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92DFEB3B-C78B-4D3F-874F-94EC26463106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92DFEB3B-C78B-4D3F-874F-94EC26463106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92DFEB3B-C78B-4D3F-874F-94EC26463106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92DFEB3B-C78B-4D3F-874F-94EC26463106}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A7D97BE-8E10-4AEA-809C-380527F0912B}
+	EndGlobalSection
+EndGlobal
