@@ -22,7 +22,7 @@ namespace RepeatWord
             foreach(string words in stringArr)
             {
                 if (!hashTable.Contains(words))
-                    hashTable.Add(words, null);
+                    hashTable.Add(words, words);
                 else
                     return words;
             }
