@@ -1,6 +1,7 @@
 using Graphs.Classes;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 
@@ -55,7 +56,41 @@ namespace GraphTests
         }
 
         //Test Size
+        [Theory]
+        [InlineData("Seattle", "LA", 10)]
+        [InlineData("Seattle", "Denver", 2)]
+        [InlineData("Denver", "LA", 5)]
+        public void TestSize(object v1, object v2, int weight)
+        {
+            List<object> cities = new List<object>()
+            {
+                "Seattle",
+                "LA",
+                "Denver"
+            };
+            //Set up the graph
+            Graph graph = new Graph(cities);
+            graph.Size();
+            Assert.Equal(3, graph.Size());
+        }
 
+        //Test GetNodes
+        [Theory]
+        [InlineData("Seattle", 0)]
+        [InlineData("LA", 1)]
+        [InlineData("Denver", 2)]
+        public void TestGetNodes(string v1, int index)
+        {
+            List<object> cities = new List<object>()
+            {
+                "Seattle",
+                "LA",
+                "Denver"
+            };
 
+            //Set up the graph
+            Graph graph = new Graph(cities);
+            Assert.Equal(graph.GetNodes()[index].Value, v1);
+        }
     }
 }
